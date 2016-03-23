@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="161" id="6ZC-8X-I3r" customClass="HistoryTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="396" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6ZC-8X-I3r" id="tDw-FC-VEe">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="mFg-tG-1QD">
+                        <rect key="frame" x="15" y="5" width="80" height="79"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="RDI-bo-OMl"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ULD-p2-e6i">
+                        <rect key="frame" x="175" y="60" width="211" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="作者:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tK0-OT-Cw5">
+                        <rect key="frame" x="115" y="60" width="50" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="SzB-dA-3w4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ljT-gh-IgR">
+                        <rect key="frame" x="115" y="10" width="266" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="ghR-fx-Xjf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ULD-p2-e6i" firstAttribute="leading" secondItem="tK0-OT-Cw5" secondAttribute="trailing" constant="10" id="1Dy-ty-x7m"/>
+                    <constraint firstItem="mFg-tG-1QD" firstAttribute="top" secondItem="tDw-FC-VEe" secondAttribute="top" constant="5" id="4Eo-9M-Glp"/>
+                    <constraint firstAttribute="trailing" secondItem="ljT-gh-IgR" secondAttribute="trailing" constant="15" id="9G8-vq-YNq"/>
+                    <constraint firstItem="ljT-gh-IgR" firstAttribute="leading" secondItem="mFg-tG-1QD" secondAttribute="trailing" constant="20" id="9dM-rq-PzL"/>
+                    <constraint firstAttribute="bottom" secondItem="ULD-p2-e6i" secondAttribute="bottom" constant="15" id="InS-Al-soq"/>
+                    <constraint firstAttribute="trailing" secondItem="ULD-p2-e6i" secondAttribute="trailing" constant="10" id="P4T-bQ-qGP"/>
+                    <constraint firstAttribute="bottom" secondItem="mFg-tG-1QD" secondAttribute="bottom" constant="5" id="Sk2-65-yNk"/>
+                    <constraint firstItem="tK0-OT-Cw5" firstAttribute="top" secondItem="ljT-gh-IgR" secondAttribute="bottom" constant="10" id="Vsc-RB-5jY"/>
+                    <constraint firstItem="mFg-tG-1QD" firstAttribute="leading" secondItem="tDw-FC-VEe" secondAttribute="leading" constant="15" id="W3p-6w-cBv"/>
+                    <constraint firstItem="ljT-gh-IgR" firstAttribute="leading" secondItem="tK0-OT-Cw5" secondAttribute="leading" id="WYY-w5-8pu"/>
+                    <constraint firstItem="ULD-p2-e6i" firstAttribute="top" secondItem="ljT-gh-IgR" secondAttribute="bottom" constant="10" id="aN9-V2-xDs"/>
+                    <constraint firstAttribute="bottom" secondItem="tK0-OT-Cw5" secondAttribute="bottom" constant="15" id="vzi-5A-HMv"/>
+                    <constraint firstItem="ljT-gh-IgR" firstAttribute="top" secondItem="tDw-FC-VEe" secondAttribute="top" constant="10" id="xA3-QK-0Cb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="historyAutorName" destination="ULD-p2-e6i" id="P7p-5r-oNC"/>
+                <outlet property="historyImg" destination="mFg-tG-1QD" id="edI-V4-jNR"/>
+                <outlet property="historyName" destination="ljT-gh-IgR" id="2kn-ML-bos"/>
+            </connections>
+            <point key="canvasLocation" x="289" y="337"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="backImage.png" width="500" height="333"/>
+    </resources>
+</document>
